@@ -1,0 +1,91 @@
+
+$or: #FF834E
+$bl: #0077d5
+// $gray: #828282
+// $a: #425bf9
+
+*, :before, :after
+	box-sizing: border-box
+	margin: 0
+	padding: 0
+ul
+	list-style: none
+.container
+	width: 100%
+	margin: 0 auto
+	padding: 0 20px 0 19px
+	position: relative
+
+.wrapper
+	overflow: hidden
+	position: relative
+	max-width: 1920px
+	margin: 0 auto
+
+body
+	font-family: 'Montserrat', sans-serif
+.web
+	display: none
+img
+	max-width: 100%
+	margin: 0 auto
+	display: block
+
+a
+	text-decoration: none
+section
+    .container
+        position: relative
+
+.button
+	width: 280px
+	height: 50px
+	box-shadow: 0px 4.55927px 9.11854px rgba(239, 139, 84, 0.2)
+	font-weight: 400
+	font-size: 16px
+	line-height: 50px
+	padding-left: 15px
+	text-align: left
+	color: #FFFFFF
+	display: block
+	margin: 0 auto
+	position: relative
+	z-index: 10
+	transition: background .6s, box-shadow .6s
+	&::before
+		position: absolute
+		content: 'Ответим на любой вопрос'
+		font-weight: 300
+		font-size: 12px
+		line-height: 15px
+		font-variant: small-caps
+		color: #FFFFFF
+		opacity: 0.5
+		bottom: -26px
+		left: 50%
+		transform: translateX(-50%)
+
+	&::after
+		position: absolute
+		content: ''
+		right: 0
+		width: 48px
+		top: 0
+		bottom: 0
+	&--promo
+		background: #FF834E
+		&::after
+			background: url("data:image/svg+xml,%3Csvg width='18' height='17' viewBox='0 0 18 17' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.16726 1.28203C7.89112 1.28203 7.66726 1.05818 7.66726 0.782032C7.66726 0.505891 7.89112 0.282032 8.16726 0.282033L16.444 0.282032C16.6087 0.282033 16.7547 0.361639 16.8458 0.484468C16.9687 0.57557 17.0483 0.721649 17.0483 0.886318L17.0483 9.16304C17.0483 9.43919 16.8244 9.66304 16.5483 9.66304C16.2721 9.66304 16.0483 9.43919 16.0483 9.16304V1.80062L1.15691 16.692C0.961645 16.8873 0.645063 16.8873 0.449801 16.692C0.254539 16.4967 0.254539 16.1801 0.449801 15.9849L15.1526 1.28203L8.16726 1.28203Z' fill='white'/%3E%3C/svg%3E") center no-repeat, #DE774B
+
+#spriteSvg
+	position: absolute
+	top: -10px
+	left: -10px
+	width: 0
+	height: 0
+	opacity: 0
+
+// @import 'blocks/_header'
+@import 'blocks/_main'
+// @import 'blocks/_comments'
+@import 'blocks/_media'
